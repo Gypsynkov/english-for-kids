@@ -1,0 +1,156 @@
+
+
+// .train_cards{
+                     
+//     max-width: 20%;
+//     height: 300px;
+//     /* max-height: 15%; */
+//     /* border: 2px solid yellow; */
+//     /* border-radius: 11%; */
+//     margin: 1%;
+//                     }
+
+
+// .train_cards:hover {
+//   transition: box-shadow .3s;
+//  border: 2px solid green;
+//  box-shadow:  10px 10px 10px rgba(13, 49, 28, 0.932); 
+                        
+//  }
+
+
+//  .train_cards_icon {
+//                         margin-top: -1px;
+//                         /* width: 50%; */
+//                         /* height: 50%; */
+//                         margin: 0 auto;
+//                         overflow: hidden;
+//                         /* border-radius: 50%; */
+//                         /* border: 6px solid white; */
+//                     }
+          
+
+//                     .train_cards_name {
+//                         padding: 20px;
+//                         /* height: 115%; */
+//                         /* margin-top: 10%; */
+//                         text-align: center;
+//                         display: flex;
+//                         justify-content: space-around;
+//                     }
+                    
+
+
+//                     .train_link_on_name{
+                      
+//                         font-family: 'Lato-Bold';
+//     font-size: 2rem;
+//     text-decoration: none;
+//     text-transform: lowercase;
+//     color: green;
+//                                 }
+
+
+
+
+//                                 .link_on_name:hover{
+//                                     transition: color .3s;
+//                                 text-decoration: underline;
+//                                     text-transform: uppercase;
+//                                     color:blue;
+//                                             }
+
+//                                             .rotate_button{
+//                                                 margin-top: -10px;
+//                                                 max-width: 15%;
+//     /* height: 25%;*/
+//                                             }
+
+
+.card_container{
+    -webkit-perspective: 500px;
+    perspective: 500px;
+}
+
+.card{
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 25px;
+    box-shadow: 0 1px 3px 0 #ccc;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.4);
+    -webkit-transition: box-shadow .25s linear,-webkit-transform .7s;
+    transition: box-shadow .25s linear,-webkit-transform .7s;
+    transition: box-shadow .25s linear,transform .7s;
+    transition: box-shadow .25s linear,transform .7s,-webkit-transform .7s;
+}
+
+.back , .font {
+
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.back, .front, .rotate {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+   
+.back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+
+.rotate {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+ 
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center 16px;
+    bottom: 5px;
+    right: 5px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.card:hover {
+    box-shadow: -1px 5px 15px 0 rgba(0,0,0,.5);
+}
+
+.translate {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card-header{
+    margin-top: 200px;
+    padding: 0 15px;
+    font-family: "Lato";
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+    background: #fff;
+    color: #212529;
+}

@@ -1,0 +1,43 @@
+.wrapper{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+        }
+        .cards{
+            padding-top: 44px;
+            background-color: green;
+            max-width: 20%;
+            height: 300px;
+            /* max-height: 15%; */
+            border: 2px solid black;
+            border-radius: 11%;
+            margin: 1%;
+         
+        }
+        
+    
+    
+        .cards_icon{
+            margin-top: -1px;
+            width: 50%;
+            height: 50%;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 75%;
+            border: 6px solid white;
+        }
+      img{
+        width: 114%;
+        height: 100%;
+        /* margin: 0 auto;*/
+          
+           
+        }
+
+        .cards_name {
+            margin-top: 10%;
+            text-align: center;
+        }
